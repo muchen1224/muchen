@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int max_(int arr[],int m)
+{
+    int num = arr[0];
+    for(int i = 0;i < m;i++)
+    {
+      if(num < arr[i])
+      {
+        num = arr[i];
+      }
+    }
+      return num;
+}
+int main(void)
+{
+  int arr[10] = {212,121,121,5,54,21,54,4,1534,1254};
+  int result = max_(arr,10);
+     printf("The element of array is %d\n",result);
+     system("pause");
+     return 0;
+
+}
